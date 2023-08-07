@@ -46,13 +46,13 @@
 
 
 
-<h3 align="center"><a href=""><strong>Want to see live preview »</strong></a></h3>
+<h3 align="center"><a href="https://smartbuy-nu.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
 
 ![productsDark](https://github.com/sonuprasad66/SmartBuy/assets/101389401/db94eea6-c121-460d-9221-84e0b257325c)
 
 <br />
 
-## Screens ( All screens are responsive along with Dark Mode)
+## Screens ( All screens are responsive, along with Dark Mode)
 - Homepage / Landing Page
 - Product Listing Page with Filters
 - Product Description Page
