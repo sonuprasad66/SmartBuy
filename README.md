@@ -87,10 +87,7 @@
 <br />
 
 ## Glimpses of Nike-Clone 🙈 :
-![homePage](https://github.com/sonuprasad66/SmartBuy/assets/101389401/faf7209d-ea02-4ee3-9961-6029580da734)
 
-
-![productsPage](https://github.com/sonuprasad66/SmartBuy/assets/101389401/dbecb2a1-6287-4926-8544-6ddb282db744)
 
 
 
@@ -99,25 +96,26 @@
     <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/faf7209d-ea02-4ee3-9961-6029580da734" alt="homePage" /></td>
     <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/dbecb2a1-6287-4926-8544-6ddb282db744" alt="Product" /></td>
   </tr>
+  
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954115-6567bd89-10e0-471a-9d4c-e236523e883b.png" alt="productDark" /></td>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954622-abf957ae-63e3-4ac1-8056-8c6f3e23c8a5.png" alt="Details" /></td>
+    <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/9c539d6e-351c-467c-b960-a3fd46902295" alt="productDark" /></td>
+    <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/8e62bb30-1397-46b3-8852-a17096fa3cac" alt="Details" /></td>
   </tr>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954651-03897359-75c5-4b74-b8bf-f520c41f982a.png" alt="detailsDark" /></td>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954652-b00a01d4-4f51-4071-a838-195092f75434.png" alt="cart" /></td>
-  </tr>
+  
    <tr>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954676-4c7b9c50-c5a5-43aa-9838-53998ce773a5.png" alt="checkout" /></td>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954681-b5ac53d3-d0c7-4e12-bcce-17a17ca58fe4.png" alt="payment" /></td>
+    <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/13fc2287-2d65-42d9-bbf9-f054c7888814" alt="checkout" /></td>
+    <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/40545da9-849b-41c6-9dd7-39025551c70a" alt="payment" /></td>
   </tr>
+  
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954708-6aed7a5f-0879-42e0-9c98-c9e62bd62122.png" alt="login" /></td>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954713-4f49c339-5e43-4511-9fe7-e68fb2c5d792.png" alt="signup" /></td>
+    <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/1ab24f58-de6c-46ff-9b37-843d25cf414d" alt="cart" /></td>
+     <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/f0704621-cc61-421b-bac7-daf998c0998a" alt="footer" /></td>
   </tr>
-    <td><img src="https://user-images.githubusercontent.com/101389401/233852984-232dcdfe-1501-4d48-95c8-7c035ec505d7.png" alt="footer" /></td>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954753-6c7cbb53-51b9-4f85-8a0e-5a203a677889.png" alt="team" /></td>
+  
+  <tr>
+    <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/f1bf4042-38c8-478c-ab54-bf31f378bc19" alt="login" /></td>
+    <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/0d3128e9-4ea8-47e5-a26f-40b33fe9727f" alt="signup" /></td>
   </tr>
- 
 </table> 
 
 <br />
@@ -145,10 +143,10 @@ Using HTTPS
 # https://github.com/sonuprasad66/SmartBuy.git
 ```
 
-+ Open terminal on your workspace with
++ Open the terminal on your workspace with
 
 ```
-cd / ur-shop
+cd / SmartBuy
 ```
 
 
