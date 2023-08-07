@@ -97,7 +97,7 @@
 ## Glimpses of Nike-Clone 🙈 :
 
 
-<----<table>
+<!---- <table>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/101389401/219953501-85e07783-1aac-4119-bfa3-40370d5f785a.png" alt="homePage" /></td>
     <td><img src="https://user-images.githubusercontent.com/101389401/219954405-3a270910-f538-42ce-8188-412df202e305.png" alt="Product" /></td>
@@ -121,7 +121,7 @@
     <td><img src="https://user-images.githubusercontent.com/101389401/219954753-6c7cbb53-51b9-4f85-8a0e-5a203a677889.png" alt="team" /></td>
   </tr>
  
-</table>--->
+</table> -->
 
 <br />
 
