@@ -51,7 +51,7 @@
 
 
 
-![productsDark](https://user-images.githubusercontent.com/101389401/219954115-6567bd89-10e0-471a-9d4c-e236523e883b.png)
+<!-- ![productsDark](https://user-images.githubusercontent.com/101389401/219954115-6567bd89-10e0-471a-9d4c-e236523e883b.png) -->
 
 <!--- Nike Clone is a MERN Stack e-commerce web application that allows you to buy shoes & clothes online with payment gateway integration. It has a variety of categories, just visit the product listing page and you will see all the products, apply filters as per your need and in just a few clicks you can buy any product from the website. This project is just for educational purpose -->
 
