@@ -87,12 +87,17 @@
 <br />
 
 ## Glimpses of Nike-Clone 🙈 :
+![homePage](https://github.com/sonuprasad66/SmartBuy/assets/101389401/faf7209d-ea02-4ee3-9961-6029580da734)
 
 
-<!---- <table>
+![productsPage](https://github.com/sonuprasad66/SmartBuy/assets/101389401/dbecb2a1-6287-4926-8544-6ddb282db744)
+
+
+
+<table>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219953501-85e07783-1aac-4119-bfa3-40370d5f785a.png" alt="homePage" /></td>
-    <td><img src="https://user-images.githubusercontent.com/101389401/219954405-3a270910-f538-42ce-8188-412df202e305.png" alt="Product" /></td>
+    <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/faf7209d-ea02-4ee3-9961-6029580da734" alt="homePage" /></td>
+    <td><img src="https://github.com/sonuprasad66/SmartBuy/assets/101389401/dbecb2a1-6287-4926-8544-6ddb282db744" alt="Product" /></td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/101389401/219954115-6567bd89-10e0-471a-9d4c-e236523e883b.png" alt="productDark" /></td>
@@ -113,7 +118,7 @@
     <td><img src="https://user-images.githubusercontent.com/101389401/219954753-6c7cbb53-51b9-4f85-8a0e-5a203a677889.png" alt="team" /></td>
   </tr>
  
-</table> -->
+</table> 
 
 <br />
 
