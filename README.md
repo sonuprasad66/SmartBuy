@@ -1,6 +1,6 @@
-<h1 align="center">UR Shop</h1>
+<h1 align="center">SmartBuy </h1>
 
-<h3 align="center">It's a MERN Stack E-commerce web application with all the major functionalities</h3>
+<h3 align="center">It's a MERN Stack E-commerce web application with all the major functionalities </h3>
 
 <br />
 
@@ -46,14 +46,14 @@
 
 
 
-<h3 align="center"><a href="https://ur-shop-seven.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
+<h3 align="center"><a href=""><strong>Want to see live preview »</strong></a></h3>
 
 
 
 
 ![productsDark](https://user-images.githubusercontent.com/101389401/219954115-6567bd89-10e0-471a-9d4c-e236523e883b.png)
 
-<!--- Nike Clone is MERN Stack e-commerce web application that allows you to buy shoes & clothes online with payment gateway integration. It has a variety of categories, just visit the product listing page and you will see all the products, apply filters as per your need and in just a few clicks you can buy any products from the website. This project is just for educational purpose -->
+<!--- Nike Clone is a MERN Stack e-commerce web application that allows you to buy shoes & clothes online with payment gateway integration. It has a variety of categories, just visit the product listing page and you will see all the products, apply filters as per your need and in just a few clicks you can buy any product from the website. This project is just for educational purpose -->
 
 
 
@@ -97,7 +97,7 @@
 ## Glimpses of Nike-Clone 🙈 :
 
 
- <table>
+<----<table>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/101389401/219953501-85e07783-1aac-4119-bfa3-40370d5f785a.png" alt="homePage" /></td>
     <td><img src="https://user-images.githubusercontent.com/101389401/219954405-3a270910-f538-42ce-8188-412df202e305.png" alt="Product" /></td>
@@ -121,7 +121,7 @@
     <td><img src="https://user-images.githubusercontent.com/101389401/219954753-6c7cbb53-51b9-4f85-8a0e-5a203a677889.png" alt="team" /></td>
   </tr>
  
-</table> 
+</table>--->
 
 <br />
 
