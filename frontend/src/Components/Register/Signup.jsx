@@ -39,7 +39,7 @@ export const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(userSignup(SignupData)).then((res) => {
-      if (res.payload.message === "Signup Successfull") {
+      if (res.payload.status === "success") {
         toast({
           title: res.payload.message,
           status: "success",
@@ -96,28 +96,37 @@ export const Signup = () => {
                   gap={5}
                 >
                   <Box>
-                    <FormControl id="fullname" isRequired>
-                      <FormLabel>Full Name</FormLabel>
+                    <FormControl id="firstname" isRequired>
+                      <FormLabel>First Name</FormLabel>
                       <Input
                         type="text"
-                        name="name"
-                        placeholder="Enter Name"
+                        name="firstname"
+                        placeholder="Enter First Name"
                         onChange={handleChange}
                       />
                     </FormControl>
                   </Box>
                   <Box>
-                    <FormControl id="profile_pic">
-                      <FormLabel>Profile_pic</FormLabel>
+                    <FormControl id="lastname" isRequired>
+                      <FormLabel>Last Name</FormLabel>
                       <Input
                         type="text"
-                        name="profile_pic"
-                        placeholder="Enter Profile URL"
+                        name="lastname"
+                        placeholder="Enter Last Name"
                         onChange={handleChange}
                       />
                     </FormControl>
                   </Box>
                 </Flex>
+                <FormControl id="profile_pic">
+                  <FormLabel>Profile_pic</FormLabel>
+                  <Input
+                    type="text"
+                    name="profile_pic"
+                    placeholder="Enter Profile URL"
+                    onChange={handleChange}
+                  />
+                </FormControl>
                 <FormControl id="email" isRequired>
                   <FormLabel>Email address</FormLabel>
                   <Input
