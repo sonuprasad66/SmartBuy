@@ -9,7 +9,7 @@ const userRouter = express.Router();
 
 userRouter.post("/signup", userSignup);
 userRouter.post("/login", userLogin);
-userRouter.get("/currentUser", authenticate, currentUser);
+userRouter.get("/profile", authenticate, currentUser);
 
 module.exports = {
   userRouter,

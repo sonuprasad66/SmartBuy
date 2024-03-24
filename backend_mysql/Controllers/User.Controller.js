@@ -2,8 +2,6 @@ const { createUser, checkUserExist, getUser } = require("../Models/User.Model");
 const bcrypt = require("bcrypt");
 var jwt = require("jsonwebtoken");
 require("dotenv").config;
-const { connection } = require("../Config/db");
-// const mysql = require("mysql2/promise");
 
 /**
  *
@@ -44,8 +42,8 @@ const userSignup = async (req, res) => {
               lastname,
               email,
               mobile_number,
-              profile_pic,
               hashed_password,
+              profile_pic,
             ])
               .then((result) => {
                 res.send({
@@ -71,7 +69,14 @@ const userSignup = async (req, res) => {
   });
 };
 
-const userLogin = (req, res) => {
+/**
+ *
+ * @param {*} req
+ * @param {*} res
+ * @returns
+ */
+
+const userLogin = async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
@@ -80,74 +85,84 @@ const userLogin = (req, res) => {
       message: "Please Enter the Email and Password",
     });
   } else {
-    checkUserExist({ email, password }, async function (err, result) {
-      if (err) {
-        return res.send({
-          status: "error",
-          message: "Error while checking db",
-        });
-      }
-      if (result.length == 0) {
-        res.send({
-          status: "error",
-          message: "User Not Found",
-        });
-      } else {
-        const hash_password = result[0].password;
-        const userId = result[0].id;
+    await checkUserExist({ email, password })
+      .then(async (result) => {
+        if (result[0].length == 0) {
+          res.send({
+            status: "error",
+            message: "User Not Found",
+          });
+        } else {
+          const hash_password = result[0][0].password;
+          const userId = result[0][0].userid;
 
-        await bcrypt.compare(password, hash_password, (err, result) => {
-          if (err) {
-            return res.send({
-              status: "error",
-              message: "Error while comparing the hash password",
-            });
-          }
-
-          if (result) {
-            let token = jwt.sign({ userId }, process.env.SECRET_KEY);
-
-            if (token) {
-              res.send({
-                status: "success",
-                message: "User Loggined Successful",
-                token: token,
+          await bcrypt.compare(password, hash_password, (err, result) => {
+            if (err) {
+              return res.send({
+                status: "error",
+                message: "Error while comparing the hash password",
               });
+            }
+
+            if (result) {
+              let token = jwt.sign({ userId }, process.env.SECRET_KEY);
+
+              if (token) {
+                res.send({
+                  status: "success",
+                  message: "User Loggined Successful",
+                  token: token,
+                });
+              } else {
+                res.send({
+                  status: "error",
+                  message: "Error while generating token",
+                });
+              }
             } else {
               res.send({
                 status: "error",
-                message: "Error while generating token",
+                message: "User Loggin Faild, wrong username/ password",
               });
             }
-          } else {
-            res.send({
-              status: "error",
-              message: "User Loggin Faild, wrong username/ password",
-            });
-          }
+          });
+        }
+      })
+      .catch((err) => {
+        res.send({
+          status: "error",
+          message: "Error while checking existing user",
         });
-      }
-    });
+      });
   }
 };
 
-const currentUser = (req, res) => {
+/**
+ *
+ * @param {*} req
+ * @param {*} res
+ * @returns
+ */
+
+const currentUser = async (req, res) => {
   const { userId } = req.body;
-  getUser(userId, function (err, result) {
-    if (err) {
+  await getUser(userId)
+    .then((result) => {
+      if (result[0].length > 0) {
+        // res.send({
+        //   status: "success",
+        //   message: "Current User Data",
+        //   currentUser: result[0][0],
+        // });
+        res.send(result[0][0]);
+      }
+    })
+    .catch((err) => {
       return res.send({
         status: "error",
         message: "Error while fetching current user data",
       });
-    }
-    if (result) {
-      res.send({
-        status: "success",
-        message: "Current User Data",
-        currentUser: result,
-      });
-    }
-  });
+    });
 };
 
 module.exports = {
