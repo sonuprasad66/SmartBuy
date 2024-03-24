@@ -32,8 +32,6 @@ export const Login = () => {
   const toast = useToast();
   const isLoading = useSelector((state) => state.AuthReducer.isLoading);
 
-
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setLoginData({
@@ -45,7 +43,7 @@ export const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(userLogin(loginData)).then((res) => {
-      if (res.payload.message === "Login successful") {
+      if (res.payload.status === "success") {
         localStorage.setItem("token", res.payload.token);
         toast({
           title: res.payload.message,

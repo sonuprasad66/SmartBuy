@@ -142,7 +142,7 @@ export const Navbar = ({ handleSearch }) => {
                       visibility={["hidden", "visible", "visible", "visible"]}
                       fontSize={"18px"}
                     >
-                      {currentUser.name}
+                      {currentUser.firstname}
                     </Text>
                   </Flex>
                 </MenuButton>
